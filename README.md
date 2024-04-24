@@ -1,48 +1,57 @@
-# Product Catalogue REST API Documentation
+# Product Catalogue API
 
-This document provides information on how to use the REST API for the Product Catalogue system.
+This project provides RESTful API endpoints for managing a product catalogue system. The system is designed to handle products with complex, nested data structures, utilizing MongoDB for storage due to its ability to store nested documents efficiently.
 
-## Table of Contents
+## Setup Instructions
 
-1. [Introduction](#introduction)
-2. [Endpoints](#endpoints)
-3. [Request and Response Formats](#request-and-response-formats)
-4. [Setup and Database](#setup-and-database)
-5. [Advanced Features](#advanced-features)
-6. [Testing](#testing)
-7. [Examples](#examples)
+### Prerequisites
 
-## <a name="introduction"></a>Introduction
+- Java Development Kit (JDK) 11 or higher
+- Maven
+- MongoDB installed and running locally or accessible remotely
 
-The Product Catalogue REST API allows users to manage products, search for products with various filters, and rate products.
+### Installation Steps
 
-## <a name="endpoints"></a>Endpoints
+1. Clone the repository:
 
-The following endpoints are available:
+    ```bash
+    git clone https://github.com/Someshbhosale02/product-catalog.git
+    ```
 
-- **GET /products**: Retrieve a list of products.
-- **POST /products**: Add a new product.
-- **GET /products/{id}**: Retrieve a specific product by ID.
-- **PUT /products/{id}**: Update a specific product by ID.
-- **DELETE /products/{id}**: Delete a specific product by ID.
-- **GET /products/search**: Search for products with filters.
-- **POST /products/{id}/rate**: Rate a product.
+2. Navigate to the project directory:
 
-## <a name="request-and-response-formats"></a>Request and Response Formats
+    ```bash
+    cd product-catalog
+    ```
 
-### Product Entity
+3. Update `application.properties` file with your MongoDB connection details:
 
-```json
-{
-  "id": "string",
-  "name": "string",
-  "description": "string",
-  "price": "number",
-  "categories": ["string"],
-  "attributes": [{"key": "string", "value": "string"}],
-  "availability": {
-    "inStock": "boolean",
-    "quantity": "integer"
-  },
-  "ratings": [{"userId": "string", "rating": "number", "comment": "string"}]
-}
+    ```properties
+    spring.data.mongodb.host=<mongodb-host>
+    spring.data.mongodb.port=<mongodb-port>
+    spring.data.mongodb.database=<mongodb-database-name>
+    ```
+
+4. Build the project using Maven:
+
+    ```bash
+    mvn clean install
+    ```
+
+5. Run the application:
+
+    ```bash
+    java -jar target/product-catalogue-api.jar
+    ```
+
+6. The application should now be running on `http://localhost:8080`.
+
+## API Endpoints
+
+### Product Endpoints
+
+- **GET /api/products**: Retrieve all products.
+- **GET /api/products/{id}**: Retrieve a product by ID.
+- **POST /api/products**: Create a new product.
+- **PUT /api/products/{id}**: Update an existing product.
+- **DELETE /api/products/{id}
