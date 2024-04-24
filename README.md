@@ -103,7 +103,8 @@ Additional documentation, including data models and API usage examples, can be f
     {"userId": "user1", "rating": 4, "comment": "Great product!"},
     {"userId": "user2", "rating": 5}
   ]
-}``` 
+}
+\```
 
 ## Database Setup and Seeding
 
@@ -113,7 +114,7 @@ To seed the database with initial data, you can execute database scripts or use 
 
 ## Advanced Features
 
-Pagination and sorting are implemented in the product list retrieval endpoint.
+Pagination and sorting implemented in product list retrieval endpoint.
 
 ## Evaluation Criteria
 
@@ -125,4 +126,3 @@ Pagination and sorting are implemented in the product list retrieval endpoint.
 ## Contributing
 
 Contributions are welcome! Please feel free to submit issues or pull requests.
-
