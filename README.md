@@ -41,7 +41,7 @@ This project provides RESTful API endpoints for managing a product catalogue sys
 5. Run the application:
 
     ```bash
-    java -jar target/product-catalogue-api.jar
+    mvn spring-boot:run
     ```
 
 6. The application should now be running on `http://localhost:8080`.
@@ -105,3 +105,18 @@ Additional documentation, including data models and API usage examples, can be f
     {"userId": "user2", "rating": 5}
   ]
 }
+## Advanced Features
+
+- Pagination and sorting implemented in product list retrieval endpoint.
+
+## Evaluation Criteria
+
+- **Data Model Complexity Handling**: Ability to implement and manipulate the nested data structure.
+- **Code Quality**: Adherence to Java best practices and clear, maintainable code.
+- **Effective Documentation**: Clarity and thoroughness of the setup and API usage documentation.
+- **Database Skills**: Proper use of MongoDB features or SQL schema design to handle the entity structure.
+
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit issues or pull requests.
