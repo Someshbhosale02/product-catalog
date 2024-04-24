@@ -81,7 +81,6 @@ This project provides RESTful API endpoints for managing a product catalogue sys
 
 Additional documentation, including data models and API usage examples, can be found in the `docs` directory.
 
-- Data Model Diagram: [Link to Diagram](docs/data_model_diagram.png)
 - Sample JSON of Product Entity:
 
 ```json
@@ -106,17 +105,24 @@ Additional documentation, including data models and API usage examples, can be f
   ]
 }
 
-<h4>Advanced Features</h4>
+## Database Setup and Seeding
 
-- **Pagination and sorting implemented in product list retrieval endpoint.**
+Ensure MongoDB is running.
+The application will automatically create the necessary collections upon startup.
+To seed the database with initial data, you can execute database scripts or use API endpoints for creating products, categories, and attributes.
 
-<h4>Evaluation Criteria</h4>
+## Advanced Features
 
-- **Data Model Complexity Handling**: Ability to implement and manipulate the nested data structure.**
-- **Code Quality**: Adherence to Java best practices and clear, maintainable code.**
-- **Effective Documentation**: Clarity and thoroughness of the setup and API usage documentation.**
-- **Database Skills**: Proper use of MongoDB features or SQL schema design to handle the entity structure.**
+Pagination and sorting are implemented in the product list retrieval endpoint.
 
-<h4>Contributing</h4>
+## Evaluation Criteria
 
-- **Contributions are welcome! Please feel free to submit issues or pull requests.**
+- **Data Model Complexity Handling**: Ability to implement and manipulate the nested data structure.
+- **Code Quality**: Adherence to Java best practices and clear, maintainable code.
+- **Effective Documentation**: Clarity and thoroughness of the setup and API usage documentation.
+- **Database Skills**: Proper use of MongoDB features or SQL schema design to handle the entity structure.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit issues or pull requests.
+
