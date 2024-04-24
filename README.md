@@ -54,4 +54,54 @@ This project provides RESTful API endpoints for managing a product catalogue sys
 - **GET /api/products/{id}**: Retrieve a product by ID.
 - **POST /api/products**: Create a new product.
 - **PUT /api/products/{id}**: Update an existing product.
-- **DELETE /api/products/{id}
+- **DELETE /api/products/{id}**
+- **GET /api/products/search**: Search products with filters for name, category, and attributes.
+
+### Category Endpoints
+
+- **GET /api/categories**: Retrieve all categories.
+- **GET /api/categories/{id}**: Retrieve a category by ID.
+- **POST /api/categories**: Create a new category.
+- **PUT /api/categories/{id}**: Update an existing category.
+- **DELETE /api/categories/{id}**: Delete a category by ID.
+
+### Attribute Endpoints
+
+- **GET /api/attributes**: Retrieve all attributes.
+- **GET /api/attributes/{id}**: Retrieve an attribute by ID.
+- **POST /api/attributes**: Create a new attribute.
+- **PUT /api/attributes/{id}**: Update an existing attribute.
+- **DELETE /api/attributes/{id}**: Delete an attribute by ID.
+
+### Rating Endpoint
+
+- **POST /api/products/{id}/rate**: Rate a product. Body should contain `userId`, `rating`, and optional `comment`.
+
+## Documentation
+
+Additional documentation, including data models and API usage examples, can be found in the `docs` directory.
+
+- Data Model Diagram: [Link to Diagram](docs/data_model_diagram.png)
+- Sample JSON of Product Entity:
+
+```json
+{
+  "id": "1",
+  "name": "Product 1",
+  "description": "Description of Product 1",
+  "price": 19.99,
+  "categories": ["Category A", "Category B"],
+  "attributes": [
+    {"size": "Medium"},
+    {"color": "Red"},
+    {"brand": "Brand X"}
+  ],
+  "availability": {
+    "inStock": true,
+    "quantity": 100
+  },
+  "ratings": [
+    {"userId": "user1", "rating": 4, "comment": "Great product!"},
+    {"userId": "user2", "rating": 5}
+  ]
+}
