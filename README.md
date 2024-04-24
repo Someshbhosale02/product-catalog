@@ -105,18 +105,18 @@ Additional documentation, including data models and API usage examples, can be f
     {"userId": "user2", "rating": 5}
   ]
 }
-## Advanced Features
 
-- Pagination and sorting implemented in product list retrieval endpoint.
+<h4>Advanced Features</h4>
 
-## Evaluation Criteria
+- **Pagination and sorting implemented in product list retrieval endpoint.**
 
-- **Data Model Complexity Handling**: Ability to implement and manipulate the nested data structure.
-- **Code Quality**: Adherence to Java best practices and clear, maintainable code.
-- **Effective Documentation**: Clarity and thoroughness of the setup and API usage documentation.
-- **Database Skills**: Proper use of MongoDB features or SQL schema design to handle the entity structure.
+<h4>Evaluation Criteria</h4>
 
+- **Data Model Complexity Handling**: Ability to implement and manipulate the nested data structure.**
+- **Code Quality**: Adherence to Java best practices and clear, maintainable code.**
+- **Effective Documentation**: Clarity and thoroughness of the setup and API usage documentation.**
+- **Database Skills**: Proper use of MongoDB features or SQL schema design to handle the entity structure.**
 
-## Contributing
+<h4>Contributing</h4>
 
-Contributions are welcome! Please feel free to submit issues or pull requests.
+- **Contributions are welcome! Please feel free to submit issues or pull requests.**
