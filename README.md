@@ -103,7 +103,7 @@ Additional documentation, including data models and API usage examples, can be f
     {"userId": "user1", "rating": 4, "comment": "Great product!"},
     {"userId": "user2", "rating": 5}
   ]
-}
+}``` 
 
 ## Database Setup and Seeding
 
