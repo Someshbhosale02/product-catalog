@@ -83,7 +83,8 @@ Additional documentation, including data models and API usage examples, can be f
 
 - Sample JSON of Product Entity:
 
-\```json
+  
+```json
 {
   "id": "1",
   "name": "Product 1",
@@ -104,7 +105,7 @@ Additional documentation, including data models and API usage examples, can be f
     {"userId": "user2", "rating": 5}
   ]
 }
-\```
+```
 
 ## Database Setup and Seeding
 
